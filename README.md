@@ -1,4 +1,4 @@
-# portfolio
-portfolio
-history
+# portfolio  
+portfolio 
+history  
 about me
