@@ -1,163 +1,644 @@
+/* =========================
+   FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sarabun:wght@300;400;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
-font-family:Prompt,sans-serif;
+
 }
+
 
 body{
-background:#f4faf6;
+
+font-family:'Sarabun',sans-serif;
+
+background:#fbfff8;
+
+color:#333;
+
 }
 
-header{
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+nav{
 
 position:fixed;
 
+top:0;
+
+left:0;
+
 width:100%;
+
+height:75px;
 
 display:flex;
 
 justify-content:space-between;
 
-padding:20px 60px;
+align-items:center;
 
-background:white;
+padding:0 8%;
 
-box-shadow:0 5px 20px rgba(0,0,0,.08);
 
-z-index:1000;
+background:rgba(255,255,255,0.85);
+
+backdrop-filter:blur(10px);
+
+
+box-shadow:
+
+0 0 20px rgba(212,175,55,.5);
+
+
+z-index:999;
+
 
 }
 
-.logo{
 
-font-size:24px;
 
-font-weight:bold;
+nav h2{
 
-color:#2E8B57;
+font-family:'Playfair Display',serif;
+
+font-size:32px;
+
+color:#4d9f4d;
+
+
+text-shadow:
+
+0 0 10px #baff8a;
+
 
 }
+
+
 
 nav a{
 
 text-decoration:none;
 
-margin-left:30px;
+color:#376b37;
 
-color:#333;
+font-size:20px;
 
-font-weight:500;
+font-weight:bold;
+
+margin-left:25px;
+
+transition:.3s;
 
 }
 
-.hero{
+
+
+nav a:hover{
+
+color:#d4af37;
+
+text-shadow:
+
+0 0 10px #d4af37;
+
+}
+
+
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+header{
+
 
 height:100vh;
 
-display:flex;
 
-flex-direction:column;
+display:flex;
 
 justify-content:center;
 
 align-items:center;
 
-background:linear-gradient(135deg,#2E8B57,#7fd6a8);
+text-align:center;
+
+
+
+background:
+
+linear-gradient(
+
+rgba(30,100,45,.65),
+
+rgba(0,30,10,.85)
+
+),
+
+url("image/profile.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
 
 color:white;
 
+
 }
+
+
+
+.hero img{
+
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+
+border:5px solid #d4af37;
+
+
+box-shadow:
+
+
+0 0 20px #d4af37,
+
+0 0 50px #baff7a;
+
+
+}
+
+
 
 .hero h1{
 
-font-size:70px;
+
+font-family:'Playfair Display',serif;
+
+font-size:90px;
+
+
+margin-top:25px;
+
+
+
+text-shadow:
+
+0 0 10px #dfff9c,
+
+0 0 30px #9cff3d;
+
+
+
+animation:neon 2s infinite alternate;
+
 
 }
+
+
+
+@keyframes neon{
+
+
+from{
+
+text-shadow:
+
+0 0 10px #dfff9c;
+
+}
+
+
+to{
+
+text-shadow:
+
+0 0 40px #aaff00;
+
+}
+
+
+}
+
+
+
+
+.hero h2{
+
+font-size:40px;
+
+}
+
+
+
+.hero p{
+
+font-size:30px;
+
+line-height:1.7;
+
+}
+
+
+
+
+/* =========================
+ SECTION
+========================= */
+
+
+section{
+
+padding:90px 12%;
+
+}
+
+
+
+.title{
+
+
+font-family:'Playfair Display',serif;
+
+
+font-size:55px;
+
+
+text-align:center;
+
+
+color:#4d9f4d;
+
+
+
+margin-bottom:45px;
+
+
+
+text-shadow:
+
+0 0 15px #cfff9b;
+
+
+}
+
+
+
+
+
+/* =========================
+ BOX
+========================= */
+
+
+.box{
+
+
+background:white;
+
+
+padding:40px;
+
+
+border-radius:30px;
+
+
+
+border:2px solid #d4af37;
+
+
+
+box-shadow:
+
+
+0 0 20px rgba(212,175,55,.35);
+
+
+
+animation:show .8s;
+
+
+
+}
+
+
+
+@keyframes show{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+
+}
+
+
+
+.box h2{
+
+font-size:35px;
+
+color:#c79b2b;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.box p{
+
+font-size:26px;
+
+line-height:1.9;
+
+}
+
+
+
+
+
+/* =========================
+ EDUCATION
+========================= */
+
+
+.school{
+
+
+background:#f2ffe8;
+
+
+padding:30px;
+
+
+border-left:8px solid #8bd450;
+
+
+
+border-radius:20px;
+
+
+margin-bottom:25px;
+
+
+
+box-shadow:
+
+0 0 15px #d7ffae;
+
+
+
+}
+
+
+
+
+
+
+/* =========================
+ IMAGE GALLERY
+========================= */
+
+
+.gallery{
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+
+
+gap:30px;
+
+
+}
+
+
+
+.gallery img{
+
+
+width:100%;
+
+
+height:300px;
+
+
+object-fit:cover;
+
+
+border-radius:25px;
+
+
+
+border:3px solid #d4af37;
+
+
+
+box-shadow:
+
+
+0 0 20px #cfff9b;
+
+
+
+transition:.4s;
+
+
+}
+
+
+
+.gallery img:hover{
+
+
+transform:translateY(-15px) scale(1.03);
+
+
+
+}
+
+
+
+
+
+/* =========================
+ CONTACT
+========================= */
+
+
+.contact{
+
+text-align:center;
+
+
+}
+
+
+
+.contact p{
+
+
+font-size:30px;
+
+
+}
+
+
+
+
+
+/* =========================
+ FOOTER
+========================= */
+
+
+footer{
+
+
+background:#214d25;
+
+
+color:white;
+
+
+text-align:center;
+
+
+padding:25px;
+
+
+font-size:22px;
+
+
+}
+
+
+
+
+
+
+/* =========================
+ MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+padding:10px;
+
+}
+
+
+nav h2{
+
+font-size:22px;
+
+}
+
+
+nav a{
+
+display:none;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+
 
 .hero p{
 
 font-size:22px;
 
-margin-top:15px;
-
 }
+
 
 section{
 
-padding:100px 10%;
+padding:70px 5%;
 
 }
 
-h2{
 
-text-align:center;
+.title{
 
-color:#2E8B57;
-
-margin-bottom:40px;
+font-size:40px;
 
 }
 
-.card{
 
-background:white;
 
-padding:40px;
+.box p{
 
-border-radius:20px;
-
-box-shadow:0 15px 30px rgba(0,0,0,.1);
-
-line-height:2;
-
-transition:.4s;
+font-size:21px;
 
 }
 
-.card:hover{
 
-transform:translateY(-10px);
-
-}
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-}
-
-.gallery img{
-
-width:100%;
-
-border-radius:15px;
-
-transition:.4s;
-
-}
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
-}
-
-footer{
-
-padding:30px;
-
-text-align:center;
-
-background:#2E8B57;
-
-color:white;
-
-margin-top:80px;
 
 }
