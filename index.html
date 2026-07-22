@@ -1,61 +1,351 @@
 <!DOCTYPE html>
 <html lang="th">
-<link rel="stylesheet" href="style.css">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio | Accounting KU</title>
+<title>Portfolio Accounting KU</title>
 
-<link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:'Sarabun',sans-serif;
+
+background:#fbfff7;
+
+color:#333;
+
+}
+
+
+
+/* NAV */
+
+nav{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+padding:15px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+background:white;
+
+box-shadow:0 0 15px #d4af37;
+
+z-index:10;
+
+}
+
+
+.logo{
+
+font-family:'Playfair Display';
+
+font-size:30px;
+
+color:#4d9b4d;
+
+}
+
+
+nav a{
+
+margin-left:20px;
+
+text-decoration:none;
+
+color:#376b37;
+
+font-size:20px;
+
+}
+
+
+
+/* HERO */
+
+
+header{
+
+height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+
+background:
+
+linear-gradient(
+rgba(40,120,60,.7),
+rgba(0,30,10,.8)
+),
+
+url("profile.jpg");
+
+
+background-size:cover;
+
+color:white;
+
+}
+
+
+
+header h1{
+
+font-family:'Playfair Display';
+
+font-size:80px;
+
+
+text-shadow:
+
+0 0 10px #dfff9c,
+
+0 0 30px #b5ff5b;
+
+}
+
+
+
+header p{
+
+font-size:30px;
+
+line-height:1.6;
+
+}
+
+
+
+
+/* SECTION */
+
+
+section{
+
+padding:80px 12%;
+
+}
+
+
+
+.title{
+
+font-family:'Playfair Display';
+
+font-size:50px;
+
+text-align:center;
+
+color:#4d9b4d;
+
+
+text-shadow:
+
+0 0 15px #cfff8a;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* CARD */
+
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+
+border:2px solid #d4af37;
+
+
+box-shadow:
+
+0 0 20px rgba(212,175,55,.4);
+
+
+margin-bottom:30px;
+
+}
+
+
+
+.card h3{
+
+color:#c99b25;
+
+font-size:35px;
+
+}
+
+
+
+.card p{
+
+font-size:25px;
+
+line-height:1.8;
+
+}
+
+
+
+
+/* EDUCATION */
+
+
+.edu{
+
+padding:25px;
+
+background:#f2ffe8;
+
+border-left:6px solid #82c94a;
+
+margin:20px 0;
+
+border-radius:15px;
+
+}
+
+
+
+
+/* IMAGE */
+
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+.gallery img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+border:3px solid #d4af37;
+
+
+box-shadow:0 0 15px #cfff8a;
+
+}
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+text-align:center;
+
+font-size:25px;
+
+}
+
+
+
+footer{
+
+background:#245324;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+
+</style>
 
 </head>
 
-<script src="script.js"></script>
-  
+
+
 <body>
 
 
-<!-- MENU -->
-
 <nav>
 
-<h2>
+<div class="logo">
 ACCOUNTING KU
-</h2>
+</div>
 
 
 <div>
 
-<a href="#profile">Profile</a>
-<a href="#education">Education</a>
+<a href="#about">ประวัติ</a>
+
+<a href="#education">ศึกษา</a>
+
 <a href="#sop">SOP</a>
-<a href="#certificate">Certificate</a>
-<a href="#activity">Activity</a>
-<a href="#contact">Contact</a>
+
+<a href="#certificate">เกียรติบัตร</a>
+
+<a href="#contact">ติดต่อ</a>
 
 
 </div>
-
 
 </nav>
 
 
 
-
-
-<!-- HOME -->
-
-
 <header>
 
 
-<div class="hero">
-
-
-<img src="image/profile.jpg">
+<div>
 
 
 <h1>
@@ -63,17 +353,15 @@ PORTFOLIO
 </h1>
 
 
-<h2>
-ชื่อ-นามสกุล
-</h2>
+<p>
+ชื่อ-นามสกุล : ................................
+</p>
 
 
 <p>
-
 คณะบริหารธุรกิจ<br>
 สาขาการบัญชี<br>
 มหาวิทยาลัยเกษตรศาสตร์
-
 </p>
 
 
@@ -85,43 +373,35 @@ PORTFOLIO
 
 
 
+<section id="about">
 
 
-
-<!-- PROFILE -->
-
-
-<section id="profile">
-
-
-<h1 class="title">
+<h2 class="title">
 ABOUT ME
-</h1>
-
-
-<div class="box">
-
-
-<h2>
-ประวัติส่วนตัว
 </h2>
+
+
+<div class="card">
+
+
+<h3>
+ประวัติส่วนตัว
+</h3>
 
 
 <p>
 
-ชื่อ : ........................................<br>
+ชื่อ : ................................<br>
 
-ชื่อเล่น : ....................................<br>
+ชื่อเล่น : .............................<br>
 
-วันเกิด : ....................................<br>
-
-งานอดิเรก : .................................<br><br>
+วันเกิด : ..............................<br><br>
 
 
 ข้าพเจ้าเป็นผู้ที่มีความละเอียด รอบคอบ
-รับผิดชอบ และสนใจด้านบัญชี
-พร้อมเรียนรู้สิ่งใหม่ ๆ
-เพื่อพัฒนาตนเองสู่สายอาชีพนักบัญชีในอนาคต
+มีความสนใจด้านบัญชีและการบริหารธุรกิจ
+พร้อมเรียนรู้สิ่งใหม่ และพัฒนาตนเอง
+เพื่อเติบโตในสายอาชีพนักบัญชี
 
 
 </p>
@@ -134,59 +414,48 @@ ABOUT ME
 
 
 
-
-
-
-
-<!-- EDUCATION -->
 
 
 <section id="education">
 
 
-<h1 class="title">
+<h2 class="title">
 EDUCATION
-</h1>
-
-
-
-<div class="box">
-
-
-<div class="school">
-
-<h2>
-มัธยมศึกษาตอนต้น
 </h2>
 
+
+<div class="card">
+
+
+<div class="edu">
+
+<h3>
+มัธยมศึกษาตอนต้น
+</h3>
+
 <p>
-
-โรงเรียน.........................<br>
-ปีการศึกษา.....................
-
+โรงเรียน...............................<br>
+ปีการศึกษา....................
 </p>
-
 
 </div>
 
 
 
+<div class="edu">
 
-
-<div class="school">
-
-<h2>
+<h3>
 มัธยมศึกษาตอนปลาย
-</h2>
+</h3>
+
 
 <p>
 
-โรงเรียน.........................<br>
+โรงเรียน...............................<br>
 
-แผนการเรียน
-คณิตศาสตร์-ภาษาอังกฤษ<br>
+แผนการเรียน คณิตศาสตร์-ภาษาอังกฤษ<br>
 
-ปีการศึกษา.....................
+ปีการศึกษา....................
 
 </p>
 
@@ -200,40 +469,31 @@ EDUCATION
 </section>
 
 
-
-
-
-
-
-
-<!-- SOP -->
 
 
 <section id="sop">
 
 
-<h1 class="title">
+<h2 class="title">
 STATEMENT OF PURPOSE
-</h1>
+</h2>
 
 
-
-<div class="box">
+<div class="card">
 
 
 <p>
 
-ข้าพเจ้ามีความตั้งใจศึกษาต่อ
+ข้าพเจ้ามีความมุ่งมั่นที่จะศึกษาต่อ
 คณะบริหารธุรกิจ สาขาการบัญชี
 มหาวิทยาลัยเกษตรศาสตร์
 
-เนื่องจากมีความสนใจด้านการจัดการทางการเงิน
-การวิเคราะห์ข้อมูล และระบบบัญชี
+เนื่องจากมีความสนใจด้านการวิเคราะห์ข้อมูล
+การจัดการทางการเงิน และระบบบัญชี
 
-ข้าพเจ้าต้องการพัฒนาความรู้
-และทักษะด้านบัญชี
-เพื่อนำไปประกอบอาชีพ
-และสร้างประโยชน์ต่อองค์กรในอนาคต
+ข้าพเจ้าตั้งใจพัฒนาความรู้ ความสามารถ
+และนำประสบการณ์ที่ได้รับไปประยุกต์ใช้
+ในการประกอบอาชีพนักบัญชีในอนาคต
 
 
 </p>
@@ -247,27 +507,22 @@ STATEMENT OF PURPOSE
 
 
 
-
-
-
-<!-- CERTIFICATE -->
-
-
 <section id="certificate">
 
 
-<h1 class="title">
-CERTIFICATE
-</h1>
-
+<h2 class="title">
+CERTIFICATES
+</h2>
 
 
 <div class="gallery">
 
 
-<img src="image/certificate1.jpg">
+<img src="certificate1.jpg">
 
-<img src="image/certificate2.jpg">
+<img src="certificate2.jpg">
+
+<img src="certificate3.jpg">
 
 
 </div>
@@ -279,27 +534,22 @@ CERTIFICATE
 
 
 
+<section>
 
 
-
-<!-- ACTIVITY -->
-
-
-<section id="activity">
-
-
-<h1 class="title">
-ACTIVITY
-</h1>
-
+<h2 class="title">
+ACTIVITIES
+</h2>
 
 
 <div class="gallery">
 
 
-<img src="image/activity1.jpg">
+<img src="activity1.jpg">
 
-<img src="image/activity2.jpg">
+<img src="activity2.jpg">
+
+<img src="activity3.jpg">
 
 
 </div>
@@ -309,24 +559,17 @@ ACTIVITY
 
 
 
-
-
-
-
-
-
-<!-- CONTACT -->
 
 
 <section id="contact">
 
 
-<h1 class="title">
+<h2 class="title">
 CONTACT
-</h1>
+</h2>
 
 
-<div class="box contact">
+<div class="card contact">
 
 
 <p>
@@ -336,16 +579,13 @@ example@email.com
 
 <br><br>
 
-
 Phone :
 08x-xxx-xxxx
 
-
 <br><br>
 
-
 Instagram :
-username
+@username
 
 
 </p>
@@ -354,10 +594,7 @@ username
 </div>
 
 
-
 </section>
-
-
 
 
 
@@ -376,5 +613,4 @@ Kasetsart University
 
 
 </body>
-
 </html>
