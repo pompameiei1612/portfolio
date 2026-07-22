@@ -1,381 +1,543 @@
 <!DOCTYPE html>
 <html lang="th">
-<link rel="stylesheet" href="style.css">
-  
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio | Accounting KU</title>
+<title>Portfolio | Marisa</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
+<script defer src="script.js"></script>
 
 </head>
 
-<script src="script.js"></script>
-  
 <body>
 
-
-<!-- MENU -->
-
-<nav>
-
-<h2>
-ACCOUNTING KU
-</h2>
-
-
-<div>
-
-<a href="#profile">Profile</a>
-<a href="#education">Education</a>
-<a href="#sop">SOP</a>
-<a href="#certificate">Certificate</a>
-<a href="#activity">Activity</a>
-<a href="#contact">Contact</a>
-
-
+<div id="loader">
+<div class="loader-circle"></div>
+<h1>Loading Portfolio...</h1>
 </div>
 
+<div class="cursor"></div>
 
-</nav>
+<div class="progress-bar"></div>
 
-
-
-
-
-<!-- HOME -->
-
+<div class="background">
+<div class="gradient"></div>
+<div class="particles"></div>
+</div>
 
 <header>
 
+<nav>
 
-<div class="hero">
-
-
-<img src="image/profile.jpg">
-
-
-<h1>
-PORTFOLIO
-</h1>
-
-
-<h2>
-ชื่อ-นามสกุล
-</h2>
-
-
-<p>
-
-คณะบริหารธุรกิจ<br>
-สาขาการบัญชี<br>
-มหาวิทยาลัยเกษตรศาสตร์
-
-</p>
-
-
+<div class="logo">
+Portfolio
 </div>
 
+<ul>
+
+<li><a href="#home">หน้าแรก</a></li>
+
+<li><a href="#about">ประวัติ</a></li>
+
+<li><a href="#education">การศึกษา</a></li>
+
+<li><a href="#sop">SOP</a></li>
+
+<li><a href="#certificate">เกียรติบัตร</a></li>
+
+<li><a href="#activity">กิจกรรม</a></li>
+
+<li><a href="#contact">ติดต่อ</a></li>
+
+</ul>
+
+<button id="theme-toggle">
+
+🌙
+
+</button>
+
+</nav>
 
 </header>
 
+<section id="home" class="hero">
 
+<div class="hero-text">
 
+<h3>WELCOME TO MY PORTFOLIO</h3>
 
+<h1>
 
+MARISA
 
-
-<!-- PROFILE -->
-
-
-<section id="profile">
-
-
-<h1 class="title">
-ABOUT ME
 </h1>
 
-
-<div class="box">
-
-
 <h2>
-ประวัติส่วนตัว
-</h2>
 
+Faculty of Business Administration
+
+</h2>
 
 <p>
 
-ชื่อ : ........................................<br>
+สาขาการบัญชี
 
-ชื่อเล่น : ....................................<br>
-
-วันเกิด : ....................................<br>
-
-งานอดิเรก : .................................<br><br>
-
-
-ข้าพเจ้าเป็นผู้ที่มีความละเอียด รอบคอบ
-รับผิดชอบ และสนใจด้านบัญชี
-พร้อมเรียนรู้สิ่งใหม่ ๆ
-เพื่อพัฒนาตนเองสู่สายอาชีพนักบัญชีในอนาคต
-
+มหาวิทยาลัยเกษตรศาสตร์
 
 </p>
 
+<div class="hero-button">
+
+<a href="#about" class="btn">
+
+Explore
+
+</a>
+
+<a href="#" class="btn outline">
+
+Download PDF
+
+</a>
 
 </div>
 
+</div>
+
+<div class="hero-image">
+
+<div class="profile-ring">
+
+<img src="assets/profile.png" alt="Profile">
+
+</div>
+
+</div>
 
 </section>
 
+<section id="about">
 
+<h2 class="section-title">
 
+ABOUT ME
 
+</h2>
 
+<div class="glass-card">
 
+<div class="about-left">
 
-<!-- EDUCATION -->
+<img src="assets/profile.png">
 
+</div>
+
+<div class="about-right">
+
+<h3>มาริสา พุดแดง</h3>
+
+<p>
+
+ชื่อเล่น :
+
+</p>
+
+<p>
+
+อายุ :
+
+</p>
+
+<p>
+
+วันเกิด :
+
+</p>
+
+<p>
+
+ที่อยู่ :
+
+</p>
+
+<p>
+
+ความสามารถ :
+
+</p>
+
+<p>
+
+งานอดิเรก :
+
+</p>
+
+<p>
+
+เป้าหมาย :
+
+ศึกษาต่อคณะบริหารธุรกิจ
+
+สาขาการบัญชี
+
+มหาวิทยาลัยเกษตรศาสตร์
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 <section id="education">
 
+<h2 class="section-title">
 
-<h1 class="title">
 EDUCATION
-</h1>
 
+</h2>
 
+<div class="timeline">
 
-<div class="box">
+<div class="timeline-item">
 
+<div class="dot"></div>
 
-<div class="school">
+<div class="content">
 
-<h2>
+<h3>
+
 มัธยมศึกษาตอนต้น
-</h2>
+
+</h3>
 
 <p>
 
-โรงเรียน.........................<br>
-ปีการศึกษา.....................
+ชื่อโรงเรียน...
 
 </p>
 
+</div>
 
 </div>
 
+<div class="timeline-item">
 
+<div class="dot"></div>
 
+<div class="content">
 
+<h3>
 
-<div class="school">
-
-<h2>
 มัธยมศึกษาตอนปลาย
-</h2>
+
+</h3>
 
 <p>
 
-โรงเรียน.........................<br>
-
-แผนการเรียน
-คณิตศาสตร์-ภาษาอังกฤษ<br>
-
-ปีการศึกษา.....................
+ชื่อโรงเรียน...
 
 </p>
 
+</div>
 
 </div>
 
-
 </div>
-
 
 </section>
-
-
-
-
-
-
-
-
-<!-- SOP -->
-
-
 <section id="sop">
 
+    <h2 class="section-title">
+        SOP
+    </h2>
 
-<h1 class="title">
-STATEMENT OF PURPOSE
-</h1>
+    <div class="glass-card sop-card">
 
+        <h3>Statement of Purpose</h3>
 
+        <p>
+            จุดเริ่มต้นของความสนใจด้านการบัญชีเกิดจากการที่ดิฉันเติบโตมาในครอบครัว
+            ที่ประกอบธุรกิจส่วนตัว ทำให้ได้เห็นการบริหารจัดการด้านการเงิน
+            รายรับ รายจ่าย และเอกสารทางบัญชีอยู่เสมอ
+        </p>
 
-<div class="box">
+        <p>
+            ดิฉันเชื่อว่าการบัญชีเป็นหัวใจสำคัญของการบริหารธุรกิจ
+            จึงตั้งใจศึกษาต่อคณะบริหารธุรกิจ
+            สาขาการบัญชี
+            มหาวิทยาลัยเกษตรศาสตร์
+            เพื่อพัฒนาความรู้และนำไปประกอบวิชาชีพในอนาคต
+        </p>
 
-
-<p>
-
-ข้าพเจ้ามีความตั้งใจศึกษาต่อ
-คณะบริหารธุรกิจ สาขาการบัญชี
-มหาวิทยาลัยเกษตรศาสตร์
-
-เนื่องจากมีความสนใจด้านการจัดการทางการเงิน
-การวิเคราะห์ข้อมูล และระบบบัญชี
-
-ข้าพเจ้าต้องการพัฒนาความรู้
-และทักษะด้านบัญชี
-เพื่อนำไปประกอบอาชีพ
-และสร้างประโยชน์ต่อองค์กรในอนาคต
-
-
-</p>
-
-
-</div>
-
+    </div>
 
 </section>
-
-
-
-
-
-
-
-<!-- CERTIFICATE -->
 
 
 <section id="certificate">
 
-
-<h1 class="title">
-CERTIFICATE
-</h1>
-
-
+<h2 class="section-title">
+CERTIFICATES
+</h2>
 
 <div class="gallery">
 
+<div class="card">
+<img src="assets/certificate1.jpg">
+</div>
 
-<img src="image/certificate1.jpg">
+<div class="card">
+<img src="assets/certificate2.jpg">
+</div>
 
-<img src="image/certificate2.jpg">
+<div class="card">
+<img src="assets/certificate3.jpg">
+</div>
 
+<div class="card">
+<img src="assets/certificate4.jpg">
+</div>
+
+<div class="card">
+<img src="assets/certificate5.jpg">
+</div>
+
+<div class="card">
+<img src="assets/certificate6.jpg">
+</div>
 
 </div>
 
-
 </section>
 
-
-
-
-
-
-
-
-<!-- ACTIVITY -->
 
 
 <section id="activity">
 
+<h2 class="section-title">
 
-<h1 class="title">
-ACTIVITY
-</h1>
+ACTIVITIES
 
+</h2>
 
+<div class="activity-grid">
 
-<div class="gallery">
+<div class="activity-card">
 
+<img src="assets/activity1.jpg">
 
-<img src="image/activity1.jpg">
+<h3>กิจกรรมจิตอาสา</h3>
 
-<img src="image/activity2.jpg">
+<p>
 
+รายละเอียดกิจกรรม
+
+</p>
 
 </div>
 
+<div class="activity-card">
+
+<img src="assets/activity2.jpg">
+
+<h3>Open House</h3>
+
+<p>
+
+รายละเอียดกิจกรรม
+
+</p>
+
+</div>
+
+<div class="activity-card">
+
+<img src="assets/activity3.jpg">
+
+<h3>แข่งขันวิชาการ</h3>
+
+<p>
+
+รายละเอียดกิจกรรม
+
+</p>
+
+</div>
+
+<div class="activity-card">
+
+<img src="assets/activity4.jpg">
+
+<h3>อบรม</h3>
+
+<p>
+
+รายละเอียดกิจกรรม
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 
 
+<section class="counter">
 
+<div>
 
+<h1 class="count" data-target="20">
 
+0
 
+</h1>
 
+<p>
 
-<!-- CONTACT -->
+Certificates
+
+</p>
+
+</div>
+
+<div>
+
+<h1 class="count" data-target="12">
+
+0
+
+</h1>
+
+<p>
+
+Activities
+
+</p>
+
+</div>
+
+<div>
+
+<h1 class="count" data-target="4">
+
+0
+
+</h1>
+
+<p>
+
+Projects
+
+</p>
+
+</div>
+
+</section>
+
 
 
 <section id="contact">
 
+<h2 class="section-title">
 
-<h1 class="title">
 CONTACT
-</h1>
 
+</h2>
 
-<div class="box contact">
+<div class="contact-card">
 
+<a href="#">
 
-<p>
+Facebook
 
-Email :
-example@email.com
+</a>
 
-<br><br>
+<a href="#">
 
+Instagram
 
-Phone :
-08x-xxx-xxxx
+</a>
 
+<a href="#">
 
-<br><br>
+Email
 
+</a>
 
-Instagram :
-username
+<a href="#">
 
+Phone
 
-</p>
-
+</a>
 
 </div>
 
-
-
 </section>
-
-
-
-
-
 <footer>
 
-Portfolio  
-<br>
-Faculty of Business Administration  
-<br>
-Accounting Major  
-<br>
-Kasetsart University
+    <div class="footer-content">
+
+        <h2>Thank You</h2>
+
+        <p>
+            ขอบคุณที่เข้ามาเยี่ยมชม Portfolio ของฉัน
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Piraya Wongpalangkul | Portfolio
+        </p>
+
+    </div>
 
 </footer>
 
+<!-- Scroll To Top -->
 
+<button id="topBtn">
+
+↑
+
+</button>
+
+<!-- Lightbox -->
+
+<div id="lightbox">
+
+    <span id="close">
+
+        ×
+
+    </span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<!-- Floating Glow -->
+
+<div class="floating glow1"></div>
+<div class="floating glow2"></div>
+<div class="floating glow3"></div>
+<div class="floating glow4"></div>
+
+<!-- Background Particles -->
+
+<div id="particles"></div>
 
 </body>
-
 </html>
