@@ -1,29 +1,50 @@
-const cards=document.querySelectorAll(".card");
+// Scroll Animation
+
+const boxes = document.querySelectorAll('.box');
+
+
+window.addEventListener('scroll',()=>{
+
+    boxes.forEach(box=>{
+
+        const position = box.getBoundingClientRect().top;
+
+        const screen = window.innerHeight;
+
+
+        if(position < screen - 100){
+
+            box.style.opacity = "1";
+            box.style.transform = "translateY(0)";
+
+        }
+
+    });
+
+});
+
+
+
+
+// Navbar Shadow
 
 window.addEventListener("scroll",()=>{
 
-cards.forEach(card=>{
+    const nav = document.querySelector("nav");
 
-let top=card.getBoundingClientRect().top;
 
-if(top<window.innerHeight-100){
+    if(window.scrollY > 50){
 
-card.style.opacity=1;
+        nav.style.boxShadow =
+        "0 0 25px #d4af37";
 
-card.style.transform="translateY(0px)";
+    }
 
-}
+    else{
 
-})
+        nav.style.boxShadow =
+        "0 0 15px #d4af37";
 
-})
-
-cards.forEach(card=>{
-
-card.style.opacity=0;
-
-card.style.transform="translateY(60px)";
-
-card.style.transition=".8s";
+    }
 
 });
